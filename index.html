@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/705d8d055f.js"></script>
+    <title>Práctica #5</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/pullrequest-logo.svg" alt="Logo">
+        <a id="icono-menu"><i class="fa-solid fa-bars"></i></a>
+    </header>
+    <nav class="menu" >
+        <ul id="menu-entero">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Ubicación</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+    </nav>
+    <section class="principal">
+        <div class="textos">
+            <h1>Creación de páginas web</h1>
+            <h2>Curso básico de HTML5 y CSS3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias cum deserunt dicta hic illum necessitatibus nisi nostrum obcaecati qui quia quibusdam quidem quisquam sequi sunt temporibus, veritatis voluptas, voluptatum.</p>
+            <a href="#"> ver</a>
+        </div>
+        <figure>
+            <img src="imagenes/foto_pullrequest.svg" alt="imagen">
+        </figure>
+    </section>
+    <footer>
+        <p>Adrián Vázquez Nieto</p>
+    </footer>
+    <script>
+        $("#icono-menu").click(function () {
+            $("#menu-entero").slideToggle();
+        });
+    </script>
+</body>
+</html>

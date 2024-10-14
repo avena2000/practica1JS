@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header a {
+    display: none;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    background-color: #28557a;
+    border-radius: 15px;
+}
+
+header img {
+    height: 50px;
+}
+.menu ul {
+    list-style-type: none; /* Elimina las viñetas */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.menu li { /* Aplica los estilos a los elementos <li> */
+    color: #28557a;
+    border: 2px solid #28557a;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+.principal {
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+}
+.principal .textos {
+    display: flex;
+    flex: 1 1 0;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.principal figure {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+}
+.principal figure img {
+    width: 100%;
+}
+.principal a {
+    text-decoration: none;
+    color: white;
+    background-color: #28557a;
+    border: 2px solid #28557a;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.principal h1 {
+    color: darkgoldenrod;
+}
+.principal h2 {
+    color: #28557a;
+    font-size: 20px;
+}
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #28557a;
+    padding: 20px 0;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header a {
+        display: block;
+    }
+    .menu ul {
+        display: none;
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+    .menu li{
+        border-radius: 0;
+        border: none;
+        border-bottom: #28557a solid 1px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .principal {
+
+        flex-direction: column-reverse;
+    }
+    .principal .textos{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
